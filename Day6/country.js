@@ -2,6 +2,14 @@ const select = document.querySelector(".js-select");
 
 const COUNTRY_LS = "country";
 
+function addSelected() {
+  const currentUser = localStorage.getItem(COUNTRY_LS);
+  const selectedOption = document.querySelector(
+    `option[value="${currentUser}"]`
+  );
+  selectedOption.selected = true;
+}
+
 function handleClick() {
   const currentValue = select.value;
   saveCountry(currentValue);
@@ -20,7 +28,7 @@ function loadCountry() {
   if (currentUser === null) {
     askForCountry();
   } else {
-    select.add(select.options[3], "selected");
+    addSelected();
   }
 }
 
