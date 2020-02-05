@@ -1,0 +1,11 @@
+.game-text {
+  width: 50px;
+}
+
+h4,
+.js-result {
+  font-weight: normal;
+}
+form {
+  line-height: 10px;
+}
