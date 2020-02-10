@@ -1,19 +1,50 @@
 body {
-  background-color: #55efc4;
+  background-image: linear-gradient(to right, red, blue);
+  color: black;
+  /* text-align: center;
+  font-size: 30px; */
 }
+
+.js-clock {
+  background: -webkit-linear-gradient(left, blue, green);
+  background: -moz-linear-gradient(right, blue, green);
+  background: -o-linear-gradient(right, blue, green);
+  background: linear-gradient(to right, blue, green);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.js-weather {
+  background: -webkit-linear-gradient(left, #ee0979, #ff6a00);
+  background: -moz-linear-gradient(right, #ee0979, #ff6a00);
+  background: -o-linear-gradient(right, #ee0979, #ff6a00);
+  background: linear-gradient(to right, #ee0979, #ff6a00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 .btn {
   cursor: pointer;
 }
-body {
-  color: white;
-}
 
-.clicked {
-  color: #8e44ad;
-}
 .form,
 .greetings {
   display: none;
+}
+
+ul {
+  padding-bottom: 5px;
+}
+
+li {
+  font-size: 20px;
+  color: green;
+  font-weight: bold;
 }
 .showing {
   display: block;
